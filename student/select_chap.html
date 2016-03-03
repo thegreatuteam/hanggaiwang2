@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>选择测试章节</title>
+        <link rel="stylesheet" type="text/css" href="../wenziyemian.css">
+        <style>
+            #wrapper {
+	            font-size: 30px;
+            }	
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="nav">
+                    <ul>
+                        <li><a href="indexstudent.php">主页</a></li>
+                        <li><a href="select_chap.html">自我测试</a></li>
+                        <li><a href="selecthw.php">作业</a></li>
+                        <li><a href="getscore.php">查看历史错题</a></li>                       
+                        <li><a href="slogout.php">注销</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main">
+            <form action="test.php" method="POST">
+            请选择要测试的章节：<br/><br/>
+            <input type="radio" name="chap" value="chapter1" checked="checked">第一章 航空航天发展概况<br />
+            <input type="radio" name="chap" value="chapter2">第二章 飞行器飞行原理<br />
+            <input type="radio" name="chap" value="chapter3">第三章 飞行器动力装置<br />
+            <input type="radio" name="chap" value="chapter4">第四章 飞行器机载设备<br />
+            <input type="radio" name="chap" value="chapter5">第五章 飞行器构造<br />
+            <input type="radio" name="chap" value="the_whole_book">整本书 <br />
+            <input type=submit name="submit" value="确定"></form>
+            </div>
+            <div id="footer">
+                
+            </div>
+        </div>
+
+     <!--✿补充题库暂缓开通✿-->       
+    </body>
+</html>

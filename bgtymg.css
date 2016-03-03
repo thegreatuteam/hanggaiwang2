@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;  
+}
+body {
+	color: #001C58;
+	font-family: SimHei;
+	font-size: 40px;             
+}	
+#wrapper {
+    width: 960px;
+    margin: 0px auto;    /*整个网页居中显示*/   
+}
+/*去掉所有超链接下划线*/
+a {
+    text-decoration: none;
+    color: #001C58;    
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #001C58;
+}
+a:visited {
+    color: #eef4f5;
+}
+#main {
+    width: 100%;
+    height: 600px;
+    /*background-color: #fff;*/
+    margin-top: 20px;
+    background-image: url("image/bg730.png");
+    background-repeat: no-repeat;
+}
+#content {
+    width: 100%;
+    height: 200px;   
+    margin: 200px auto auto;  /*content距main顶端200px*/
+    float: left;
+    text-align: center;
+}
+#footer {
+    width: 100%;
+    height: 50px;
+    background-color: #001C58;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}

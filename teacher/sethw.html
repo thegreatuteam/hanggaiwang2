@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>布置作业页面</title>
+    </head>
+    <body>
+        <form action="oksethw.php" method="post">            
+            <label for="chapter">请选择需要布置作业的章节：</label>         
+            <select name="chapter">
+                <option value="chapter1">第一章</option>
+                <option value="chapter2">第二章</option>
+                <option value="chapter3">第三章</option>
+                <option value="chapter4">第四章</option>
+                <option value="chapter5">第五章</option>
+                <option value="the_whole_book">整本书</option>
+            </select><br/>     
+            请选择单选题号范围：<!--此处以每章共4道题为例，单选2，多选2-->
+            从第<input type="number" min="1" max="2" name="danxmin">题
+            至第<input type="number" min="1" max="2" name="danxmax">题<br/>
+            请选择多选题号范围：
+            从第<input type="number" min="1" max="2" name="duoxmin">题
+            至第<input type="number" min="1" max="2" name="duoxmax">题<br/>
+            请选择此次作业的提交时间期限：
+            <input type="date" name="ksdate">
+            至
+            <input type="date" name="jsdate"><br/>
+            <input type="submit" value="确定"><br/>
+        </form>        
+    </body>
+</html>
